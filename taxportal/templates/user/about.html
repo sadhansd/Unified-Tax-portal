@@ -1,0 +1,158 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>cla</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+      <!-- style css -->
+      <link rel="stylesheet" href="{% static 'css/style.css' %}">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+      <!-- fevicon -->
+      <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout inner_posituong computer_page">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="{% static 'images/loading.gif' %}" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                     <div class="full">
+                        <div class="center-desk">
+                           <div class="logo">
+                              <a href="index.html"></a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                     <nav class="navigation navbar navbar-expand-md navbar-dark ">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarsExample04">
+                           <ul class="navbar-nav mr-auto">
+                              <li class="nav-item ">
+                                 <a class="nav-link" href="/">Home</a>
+                              </li>
+                              <li class="nav-item active">
+                                 <a class="nav-link" href='about'>About</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="computer.html">calculator</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="https://www.incometaxindia.gov.in/Pages/default.aspx">Income Tax</a>
+                              </li>
+                              <li class="nav-item">
+                                 <a class="nav-link" href="https://onlineservices.tin.egov-nsdl.com/etaxnew/tdsnontds.jsp">Payment</a>
+                              </li>
+                     
+
+                              <li class="nav-item d_none">
+                                 <a class="nav-link" href="#">Login</a>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <!-- end header inner -->
+      <!-- end header -->
+      <!-- about section -->
+      <div class="about">
+         <div class="container">
+            <div class="row d_flex">
+               <div class="col-md-5">
+                  <div class="titlepage">
+                     <h2>About Us</h2>
+                     <p>This is the official portal of Income Tax Department, Ministry of Finance, Government of India. The portal has been developed as a Mission Mode Project under the National E-Governance Plan. The objective of this portal is to provide a single window access to the income tax related services for taxpayers and other stakeholders.</p>
+                     <a class="read_more" href="https://www.incometax.gov.in/iec/foportal">Learn more</a>
+                  </div>
+               </div>
+               <div class="col-md-7">
+                  <div class="about_img">
+                     <figure><img src="data:image/jpeg;base64,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" alt="#"/></figure>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      </div>
+      <!-- end about section -->
+      <!--  footer -->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     
+                     
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <h3>About Us</h3>
+                     <ul class="about_us">
+                        <li>dolor sit amet, consectetur<br> magna aliqua. Ut enim ad <br>minim veniam, <br> quisdotempor incididunt r</li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <h3>Contact Us</h3>
+                     <ul class="conta">
+                        <li>dolor sit amet,<br> consectetur <br>magna aliqua.<br> quisdotempor <br>incididunt ut e </li>
+                     </ul>
+                  </div>
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+                     <form class="bottom_form">
+                        <h3>Feedback</h3>
+                        <input class="enter" placeholder="Enter your email" type="text" name="Enter your email">
+                        <button class="sub_btn">Send</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+            
+         </div>
+      </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="{% static 'js/jquery.min.js' %}"></script>
+      <script src="{% static 'js/popper.min.js' %}"></script>
+      <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+      <!-- sidebar -->
+      <script src="{% static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+      <script src="{% static 'js/custom.js' %}"></script>
+   </body>
+</html>
+
